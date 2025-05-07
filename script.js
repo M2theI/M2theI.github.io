@@ -56,4 +56,13 @@ document.addEventListener('DOMContentLoaded', () => {
         });
     }, { threshold: 0.15 });
     fadeEls.forEach(el => observer.observe(el));
+
+    // Handle resume link click
+    const resumeLink = document.querySelector('.resume-link');
+    if (resumeLink) {
+        resumeLink.addEventListener('click', function(e) {
+            e.preventDefault();
+            window.open('resume.pdf', '_blank');
+        });
+    }
 }); 
