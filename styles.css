@@ -79,6 +79,21 @@ nav {
     color: var(--primary-color);
 }
 
+.resume-link {
+    background-color: var(--primary-color);
+    color: white !important;
+    padding: 8px 16px;
+    border-radius: 4px;
+    transition: all 0.3s ease;
+}
+
+.resume-link:hover {
+    background-color: var(--secondary-color);
+    color: white !important;
+    transform: translateY(-2px);
+    box-shadow: 0 2px 4px rgba(0, 0, 0, 0.2);
+}
+
 /* Hero Section */
 #hero {
     height: 100vh;
